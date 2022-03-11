@@ -1,0 +1,153 @@
+.container {
+  display: flex;
+}
+
+.countries {
+  display: flex;
+  flex-direction: column;
+  .countries-info {
+    width: 1399px;
+    height: 106px;
+    margin-left: 55px;
+    margin-bottom: 38px;
+    border-bottom: 1px solid #a5a5a5;
+
+    h2 {
+      margin: 0;
+      font-family: inherit;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 23px;
+      cursor: pointer;
+    }
+
+    h2 i {
+      position: absolute;
+      font-size: 27px;
+      margin-left: 19px;
+      color: #2962ff;
+      cursor: pointer;
+    }
+
+    .content {
+      width: 763px;
+      height: 24px;
+      display: flex;
+      flex: 1 1 auto;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 16px;
+      margin-top: 25px;
+
+      .info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .info-code {
+          margin-right: 52px;
+        }
+        .info-cost {
+          margin-right: 84px;
+        }
+        .info-code-value {
+          color: #2962ff;
+        }
+        .info-cost-value {
+          color: #2962ff;
+        }
+      }
+      .currency {
+        margin: 0 139px 0 0;
+      }
+    }
+  }
+}
+
+.filter {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 375px;
+  min-height: 1080px;
+  background: #fff;
+  border-left: 1px solid #a5a5a5;
+}
+
+.filter {
+  border-bottom: 1px solid;
+}
+.filter-title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+  color: rgba(0, 0, 0, 0.87);
+  margin: 49px 0 0 33px;
+}
+.filter-search {
+  width: 329px;
+  height: 28px;
+  border: none;
+  border-bottom: 1px solid;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(0, 0, 0, 0.4);
+  margin: 48px 0 0 31px;
+  position: relative;
+}
+.filter-search textarea {
+  position: absolute;
+  top: 5px;
+}
+
+.filter-search:focus:not([type="submit"]),
+textarea:focus {
+  outline: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.filter-select {
+  position: relative;
+}
+
+.filter-select select {
+  width: 329px;
+  height: 28px;
+  border-bottom: 1px solid;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(0, 0, 0, 0.4);
+  appearance: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.pagintation-actions {
+  display: flex;
+  p {
+    margin: 4px 16px;
+  }
+}
+.pagintation {
+  display: flex;
+  margin: 19px 0 0 58px;
+}
+
+.current {
+  font-size: 15px;
+  font-weight: 600;
+  margin: auto 2px;
+}
+
+.number-page-changer {
+  font-size: 22px;
+  color: #347cff;
+}
+
+.filter-radio {
+  margin: 31px 0 0 33px;
+}
+
+.text-color {
+  color: #2962ff;
+}

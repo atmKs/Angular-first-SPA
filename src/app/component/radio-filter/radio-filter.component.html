@@ -1,0 +1,7 @@
+<div class="radio-filter">
+    <h2 class="radio-title">Континент</h2>
+    <div class="radio" *ngFor="let option of options; let i = index">
+        <input (click)="getValue(option)" class="radio__input" name="option" type="radio" id="radio_{{i}}">
+        <label class="radio__label" for="radio_{{i}}">{{option}}</label>
+    </div>
+</div>

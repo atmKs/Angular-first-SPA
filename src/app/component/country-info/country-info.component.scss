@@ -1,0 +1,82 @@
+.country-info {
+  width: 669px;
+  height: 458px;
+  position: relative;
+  margin: 48px 0 0 55px;
+  i {
+    font-size: 15px;
+    margin-right: 5px;
+  }
+  span {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    cursor: pointer;
+  }
+  h2 {
+    margin: 20px 0 0 0;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+    color: rgba(0, 0, 0, 0.87);
+  }
+  .container {
+    margin-top: 51px;
+    .content {
+      width: 763px;
+      height: 24px;
+      display: flex;
+      flex: 1 1 auto;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 16px;
+      margin-top: 25px;
+      margin-bottom: 40px;
+
+      .info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .info-code {
+          margin-right: 52px;
+        }
+        .info-cost {
+          margin-right: 84px;
+        }
+        .info-name {
+          margin-right: 68px;
+        }
+        .info-code-value {
+          color: #2962ff;
+        }
+        .info-cost-value {
+          color: #2962ff;
+        }
+      }
+      .currency {
+        margin: 0 139px 0 0;
+      }
+      .name {
+        margin: 0 111px 0 0;
+      }
+    }
+  }
+  h3 {
+    margin: 42px 0 0 0;
+    font-weight: normal;
+  }
+  .more-info {
+    margin: 22px 0 0 0;
+    text-align: justify;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+  }
+  .text-color {
+    color: #2962ff;
+  }
+}

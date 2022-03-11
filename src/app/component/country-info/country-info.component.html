@@ -1,0 +1,31 @@
+<div class="country-info" *ngIf="countriesInfo">
+    <span class="text-color" [routerLink]="'/'"><i class="uil uil-arrow-left"></i>Вернуться</span>
+    <h2>{{countriesInfo.name}}</h2>
+    <div>
+        <div class="container">
+            <div class="content">
+                <div class="info">
+                    <p class="info-code">Код</p>
+                    <p class="text-color">{{countriesInfo.code}}</p>
+                </div>
+                <div class="info currency">
+                    <p class="info-cost">Валюта</p>
+                    <p class="text-color">{{countriesInfo.currency}}</p>
+                </div>
+            </div>
+            <div class="content ">
+                <div class="info">
+                    <p class="info-code">Тел</p>
+                    <p class="text-color">{{countriesInfo.phone}}</p>
+                </div>
+                <div class="info name">
+                    <p class="info-name">Название</p>
+                    <p class="info-value text-color">{{countriesInfo.name}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h3>Инофрмация о стране</h3>
+    <p class="more-info text-color"> {{countriesInfo.native}}, {{countriesInfo.continent.name}}
+        : {{countriesInfo.continent.code}} </p>
+</div>

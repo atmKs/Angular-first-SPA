@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="countries">
+        <div *ngFor="let country of Countries | paginate: {itemsPerPage : 5, currentPage : page} "
+            class="countries-info">
+            <h2 *ngIf="country" [routerLink]="'/' + country.code">
+                {{country.name}} <i class="uil uil-arrow-right"></i>
+            </h2>
+            <div class="content">
+                <div class="info">
+                    <p class="info-code">Код</p>
+                    <p class="text-color">{{country.code}}</p>
+                </div>
+                <div class="info currency">
+                    <p class="info-cost">Валюта</p>
+                    <p class="text-color">{{country.currency}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="filter">
+    <h2 class="filter-title">Фильтры</h2>
+    <input type="text" class="filter-search" placeholder="Название" [(ngModel)]="searchCountry">
+    <app-radio-filter [(value)]="continentFilter" [options]="continentOptions"></app-radio-filter>
+
+</div>
+
+
+<pagination-template class="pagintation" #p="paginationApi" (pageChange)="page = $event">
+    <div class="pagintation-actions">
+        <div class="number-page-changer">
+            <i (click)="p.previous()" class=" uil uil-angle-left"></i>
+        </div>
+        <div *ngFor="let page of p.pages" [class.current]="p.getCurrent() === page.value">
+            <div *ngIf="p.getCurrent() === page.value">
+                <p class="curent-page">{{ page.label }}</p>
+            </div>
+        </div>
+        <div class="number-page-changer" [class.disabled]="p.isLastPage()">
+            <i *ngIf="!p.isLastPage()" (click)="p.next()" class=" uil uil-angle-right"></i>
+        </div>
+    </div>
+</pagination-template>
